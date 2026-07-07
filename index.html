@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+        :root{
+            --escuro: #111010;
+            --claro: #d6d6d6;
+            --fonte: 'Nunito Sans', sans-serif;
+        }
+
+        body{
+            background-color: var(--escuro);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-family: var(--fonte);
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            height: auto;
+            width: auto;
+            background-color: var(--claro);
+            border-radius: 8px;
+        }
+
+        .nivel{
+            border: none;
+            width: 100px;
+            border-radius: 8px;
+            font-size: 20px;
+            height: 30px;
+        }
+
+        .niveis{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nomes{
+            color: var(--claro);
+        }
+
+        #facil{
+            background-color: rgb(63, 175, 100);
+        }
+
+        #medio{
+            background-color: rgb(255, 255, 100);
+        }
+
+        #dificil{
+            background-color: rgb(255, 100, 100);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="niveis">
+        <h2>Escolha o nível do quiz</h2>
+        <a href="hikaru.html">
+            <button class="nivel" id="facil">fácil</button></a><a href="quizmedio.html">
+            <button class="nivel" id="medio">médio</button></a><a href="quizdificil.html">
+            <button class="nivel" id="dificil">Difícil</button></a>
+        </div>
+    </main>
+    <div class="nomes">
+        <h4>Bruno Siqueira, Stefany Hikaru, Arthur Claudino, Bryan Lucas</h4>
+    </div>
+</body>
+</html>
