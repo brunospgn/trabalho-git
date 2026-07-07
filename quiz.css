@@ -1,0 +1,118 @@
+:root {
+    --verde: #204f56;
+    --limao: #e6fd53;
+    --branco: #fefffd;
+    --azul: #b9cdff;
+    --azul-escuro: #1b263f;
+    --preto: #0f0f0f;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    max-height: 100vh;
+    max-width: 100vi;
+    height: 100%;
+    width: 99%;
+
+    margin-bottom: 0;
+
+    background-image: url(assets/fundo.png);
+    background-size: contain;
+}
+
+.texto {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+    
+    color: var(--limao);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 500px;
+    background-color: var(--azul-escuro);
+    border-radius: 55px;
+    padding: 20px;
+
+    height: 80%;
+    width: 30%;
+
+    box-shadow: var(--branco) 0px 0px 7px 0px;
+}
+
+.hd-container {
+    display: flex;
+    gap: 250px;
+}
+
+#quiz-nivel {
+    margin-top: 0;
+    color: var(--limao);
+    font-weight: 545;
+}
+
+#progresso {
+    margin-top: 0;
+    color: var(--limao);
+    font-weight: 550;
+}
+
+.pergunta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    height: 68%;
+    width: 90%;
+}
+
+.btn {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+    font-size: 1em;
+    
+    background:
+        linear-gradient(var(--verde)) padding-box,
+        linear-gradient(90deg, var(--branco), var(--limao)) border-box;
+    
+
+    color: var(--limao);
+
+    height: 18%;
+    width: 80%;
+
+    border: 2px solid transparent;
+    border-radius: 50px;
+
+    cursor: pointer;
+}
